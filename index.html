@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Meu portfólio</title>
+</head>
+<body>
+
+    <header class="container text-center">
+        <img src="profe.webp" alt="avatar da Fernanda" width="150" height="150">
+        <h1>Eu sou Eduardo</h1>
+        <p>Sou aluno. Veja os projetos que já desenvolvi!</p>
+    </header>
+
+    <section class="container text-center">
+        <img class="nuvem rounded-circle" src="nuvem.jpg" alt="nuvem" width="50%" height="auto">
+        <p>Eu sou Fernanda</p>
+        <h1>Eu ensino Programação</h1>
+        <p>Sou Engenheira de Computação e Pedagoga. Ensino pensamento computacional para estudantes do Ensino Fundamental e Médio, utilizando HTML, CSS e JavaScript. Veja os projetos que já desenvolvi.</p>
+        
+        <h2>Minhas habilidades</h2>
+        <div>
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">Scratch</span>
+        </div>
+    </section>
+
+    <section class="container text-center mt-4">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="1.png" class="card-img-top" alt="Jogo de Cartas" width="250" height="150">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogo de Cartas</h5>
+                        <p class="card-text">Um site com umas cartas.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal1">Link</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="2.png" class="card-img-top" alt="Jogo de Cartas 2" width="250" height="150">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogo de Cartas 2</h5>
+                        <p class="card-text">Um site com outras cartas.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal2">Link</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="3.png" class="card-img-top" alt="Jogo de Cartas 3" width="250" height="150">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogo de Cartas 3</h5>
+                        <p class="card-text">Um site com mais cartas.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal3">Link</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="https://github.com/Eduardokorb2023">GitHub</a>
+        </div>
+        <div>
+            <a href="#">não toque no vermelho</a>
+        </div>
+        <p class="my-5 text-center" style="font-size: 20px;">site produzido por Eduardo Matias</p>
+    </footer>
+
+    <!-- Modais -->
+    <div class="modal" tabindex="-1" id="Modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jogo de Cartas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Informações sobre o Jogo de Cartas.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="Modal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jogo de Cartas 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Informações sobre o Jogo de Cartas 2.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="Modal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jogo de Cartas 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Informações sobre o Jogo de Cartas 3.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
