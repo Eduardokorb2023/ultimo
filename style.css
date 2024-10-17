@@ -1,17 +1,17 @@
 .container{
-    text-align: center;
-  }
-  
-  
+  text-align: center;
+}
+
+
 
 .container2{
-   display: flex; 
-           gap: 20px;
-           justify-content: center;
-           align-items: center;
- }
+ display: flex; 
+         gap: 20px;
+         justify-content: center;
+         align-items: center;
+}
 .card {
-  margin-bottom: 20px; /* Ajuste o valor conforme necessário */
+margin-bottom: 20px; /* Ajuste o valor conforme necessário */
 }           
 
 
@@ -19,24 +19,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-  --cor-principal: #ff0000;
-  --cor-secundaria: #284260;
-  --cor-destaque: #C92BFC;
+--cor-principal: #ff0000;
+--cor-secundaria: #1d3046;
+--cor-destaque: #212121;
+--cor-ttt: #34414f;
+--cor-3:#000000;
+--cor-4:#45a7ce;
 }
 
 body {
-  font-family: 'Chakra Petch', sans-serif;
+font-family: 'Chakra Petch', sans-serif;
+color: var(--cor-3);
+
+transition: background-color 2s;
+
 }
 
 h1, h2, h5 {
-  color: var(--cor-secundaria);
+color: var(--cor-ttt);
+font-weight: 700;
+}
+
+.lead {
+  color: var(--cor-destaque);
   font-weight: 700;
 }
 
-footer a {
-  color: var(--cor-principal);
+footer a, .btn-link:hover {
+color: var(--cor-principal);
 }
 
 footer a:hover {
-  color: var(--cor-destaque);
+color: var(--cor-destaque);
+}
+
+.modal-body{
+  background-color:var(--cor-4)
 }
