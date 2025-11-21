@@ -12,27 +12,37 @@
 }
 .card {
 margin-bottom: 20px; /* Ajuste o valor conforme necessário */
+ height: 100%;      
 }           
-
+.card-img-top {
+    width: 100%;        /* imagem ocupa toda a largura do card */
+    height: 180px;      /* altura DO TAMANHO IGUAL PARA TODAS */
+    object-fit: cover;  /* corta a imagem para caber sem distorcer */
+    object-position: center;
+    display: block;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
 --cor-principal: #ff0000;
---cor-secundaria: #1d3046;
+--cor-secundaria: #000000;
 --cor-destaque: #212121;
---cor-ttt: #34414f;
+--cor-ttt: #006aff;
 --cor-3:#000000;
 --cor-4:#45a7ce;
 }
 
 body {
-font-family: 'Chakra Petch', sans-serif;
-color: var(--cor-3);
+    font-family: 'Bai Jamjuree', sans-serif;
 
-transition: background-color 2s;
-
+    /* GIF de fundo */
+    background-image: url('1.gif');
+    background-repeat: no-repeat;        /* não repete */
+    background-position: center top;     /* centraliza horizontal e topo vertical */
+      background-size: 740px auto; 
+    background-attachment: fixed;        /* fica fixo na tela enquanto rola o conteúdo */
 }
 
 h1, h2, h5 {
@@ -55,4 +65,14 @@ color: var(--cor-destaque);
 
 .modal-body{
   background-color:var(--cor-4)
+}
+
+.badge-grande {
+    font-size: 50px;  
+    padding: 15px 30px;  
+     border-radius: 20px;   
+}
+
+.mão {
+    border-radius: 20px; 
 }
